@@ -117,9 +117,7 @@
             <xs:element name="student">
                 <xs:annotation>
                     <xs:documentation>
-                        The section describes the student who is being sent for this mobility. Immutable.
-
-                        These fields MAY change in time (e.g. after the student changes his name).
+                        The section describes the student who is being sent for this mobility.
                     </xs:documentation>
                 </xs:annotation>
                 <xs:complexType>
