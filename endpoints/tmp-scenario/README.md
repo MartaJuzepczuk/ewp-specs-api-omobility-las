@@ -1,7 +1,7 @@
 Learning agreement: schema simplification
 =========================================
 
-The current version of the learning agreement is quite complicated. We are trying to propose a slightly simpler version that still will be compatible with the Commission's guidelines (https://ec.europa.eu/programmes/erasmus-plus/resources/documents/applicants/learning-agreement_en).
+The current version of the learning agreement is quite complicated. We are trying to propose a simpler version that still will be compatible with the Commission's guidelines (https://ec.europa.eu/programmes/erasmus-plus/resources/documents/applicants/learning-agreement_en).
 
 In the current version of the scheme, both `components-studied` (tables A / A2) and `components-recognized` (tables B / B2) consist of six parts:
 - `before-mobility-changes`
@@ -22,9 +22,9 @@ In short, our suggestion is to remove all `changes` parts and slightly modify th
 
 **What we propose**
 
-- We will keep only three parts: `before-mobility-snapshot`, `latest-approved-snapshot` and `latest-draft-snapshot`. All of them seem necessary, because we need to represent Table A and B (`before-mobility-snapshot`), current version (`latest-approved-snapshot`) and we also need a place to send proposals, which have not been signed yet (`latest-draft-snapshot`).
-- The `before-mobility-snapshot` part will not be changed.
-- In the other two parts, with each course it will be possible to additionally say that, in relation to the "before" version, it has been removed or added, and send the reason of the change. The new fields (inserted/deleted flag and the reason) will be used only when the LA has been already first signed. The flag can be computed based on the courses listed in the `before-mobility-snapshot` and `latest-approved-snapshot`, but we need a place to explain the reason of such a change. 
+- We will keep only three parts. For simplicity we remove the `snapshot` suffix from their names, so we have: `before-mobility`, `latest-approved` and `latest-draft`. All of them seem necessary, because we need to represent Table A and B (`before-mobility`), current version (`latest-approved`) and we also need a place to send proposals, which have not been signed yet (`latest-draft`).
+- The `before-mobility` part will not be changed.
+- In the other two parts, with each course it will be possible to additionally say that, in relation to the "before" version, it has been removed or added, and send the reason of the change. The new fields (inserted/removed flag and the reason) will be used only when the LA has been already first signed. The flag can be computed based on the courses listed in the `before-mobility` and `latest-approved`, but we need a place to explain the reason of such a change. 
 
 **Example scenario**
 

@@ -1,6 +1,6 @@
 <approve-components-studied-draft-v1>
     <approving-party>receiving-hei</approving-party>
-    <current-latest-draft-snapshot>
+    <current-latest-draft>
         <component-studied status="removed" reason="timetable-conflict">
             <title>Advanced Logics for Computer Scientists</title>
         </component-studied>
@@ -16,5 +16,5 @@
         <component-studied status="inserted" reason="substituting-deleted">
             <title>Artificial Intelligence and Expert Systems</title>
         </component-studied>
-    </current-latest-draft-snapshot>
+    </current-latest-draft>
 </approve-components-studied-draft-v1>

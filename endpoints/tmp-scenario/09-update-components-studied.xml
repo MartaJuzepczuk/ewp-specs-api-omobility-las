@@ -1,5 +1,5 @@
 <update-components-studied-v1>
-    <current-latest-draft-snapshot>
+    <current-latest-draft>
         <component-studied status="removed" reason="timetable-conflict">
             <title>Advanced Logics for Computer Scientists</title>
         </component-studied>
@@ -15,7 +15,7 @@
         <component-studied status="inserted" reason="substituting-deleted">
             <title>Artificial Intelligence and Expert Systems</title>
         </component-studied>
-    </current-latest-draft-snapshot>
+    </current-latest-draft>
     <suggestion>
         <component-studied status="removed" reason="timetable-conflict">
             <title>Advanced Logics for Computer Scientists</title>

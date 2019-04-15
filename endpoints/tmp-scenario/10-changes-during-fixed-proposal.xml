@@ -1,5 +1,5 @@
 <components-studied>
-    <before-mobility-snapshot>
+    <before-mobility>
         <component-studied>
             <title>Advanced Logics for Computer Scientists</title>
         </component-studied>
@@ -20,8 +20,8 @@
             <by-party>receiving-hei</by-party>
             <timestamp>2019-01-22T11:12:08+02:00</timestamp>
         </approval>
-    </before-mobility-snapshot>
-    <latest-approved-snapshot>
+    </before-mobility>
+    <latest-approved>
         <component-studied>
             <title>Advanced Logics for Computer Scientists</title>
         </component-studied>
@@ -45,8 +45,8 @@
             <by-party>receiving-hei</by-party>
             <timestamp>2019-03-04T09:17:43+02:00</timestamp>
         </approval>
-    </latest-approved-snapshot>
-    <latest-draft-snapshot>
+    </latest-approved>
+    <latest-draft>
         <component-studied status="removed" reason="timetable-conflict">
             <title>Advanced Logics for Computer Scientists</title>
         </component-studied>
@@ -70,5 +70,5 @@
             <timestamp>2019-03-08T14:20:56+02:00</timestamp>
         </approval>
         <should-now-be-approved-by>receiving-hei</should-now-be-approved-by>
-    </latest-draft-snapshot>
+    </latest-draft>
 </components-studied>
