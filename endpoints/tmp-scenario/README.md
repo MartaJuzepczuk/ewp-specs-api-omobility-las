@@ -14,17 +14,20 @@ In the current version of the scheme, both `components-studied` (tables A / A2) 
 In short, our suggestion is to remove all `changes` parts and slightly modify the `snapshot` parts, so that we can express the reasons for the changes in LA after it has been first signed (by all three parties - tables A2 and B2).
 
 **Why we want to get rid of the `changes` parts?**
+
 - Keeping the whole history of changes is not required in the LA process.
 - Expressing changes in the current version of the API is complicated. Because we do not have any required identifiers or codes for the courses on the receiving hei (`components-studied`), and it seems that we can not require them, we use the position numbers on the list (indexes). When the change consists of several removal and addition operations, the indexes may be interpreted differently. Of course, we have to impose one way of interpretation, but it can still easily lead to errors.
 - Not everyone stores the entire change history on the system and the current specification allows it. In such cases, the server is allowed to calculate the `changes` parts based on the current and previous version before sending. It seems unnecessary. Equally, the client can do such a calculation if for some reason he wants to use it.
 - Courses lists in LA are not long. Coordinators can (or even may prefere) to view entire, ready versions of LA. Or the client systems, even using poor algorithms, can calculate these changes if needed.
 
 **What we propose**
+
 - We will keep only three parts: `before-mobility-snapshot`, `latest-approved-snapshot` and `latest-draft-snapshot`. All of them seem necessary, because we need to represent Table A and B (`before-mobility-snapshot`), current version (`latest-approved-snapshot`) and we also need a place to send proposals, which have not been signed yet (`latest-draft-snapshot`).
 - The `before-mobility-snapshot` part will not be changed.
 - In the other two parts, with each course it will be possible to additionally say that, in relation to the "before" version, it has been removed or added, and send the reason of the change. The new fields (inserted/deleted flag and the reason) will be used only when the LA has been already first signed. The flag can be computed based on the courses listed in the `before-mobility-snapshot` and `latest-approved-snapshot`, but we need a place to explain the reason of such a change. 
 
 **Example scenario**
+
 For clarity, the examples contain only information about courses that the student wants to attend at the receiving hei (`components-studied`). Attached files *are not* valid get responses or valid update requests.
 
 * 01-initial-version.xml - first proposal of the LA, already accepted by the student and the sending hei (get response)
