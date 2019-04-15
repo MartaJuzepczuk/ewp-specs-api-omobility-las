@@ -24,7 +24,8 @@ In short, our suggestion is to remove all `changes` parts and slightly modify th
 
 - We will keep only three parts. For simplicity we remove the `snapshot` suffix from their names, so we have: `before-mobility`, `latest-approved` and `latest-draft`. All of them seem necessary, because we need to represent Table A and B (`before-mobility`), current version (`latest-approved`) and we also need a place to send proposals, which have not been signed yet (`latest-draft`).
 - The `before-mobility` part will not be changed.
-- In the other two parts, with each course it will be possible to additionally say that, in relation to the "before" version, it has been removed or added, and send the reason of the change. The new fields (inserted/removed flag and the reason) will be used only when the LA has been already first signed. The flag can be computed based on the courses listed in the `before-mobility` and `latest-approved`, but we need a place to explain the reason of such a change. 
+- In the other two parts, with each course it will be possible to additionally say that, in relation to the "before" version, it has been removed or added, and send the reason of the change. The new fields (inserted/removed flag and the reason) will be used only when the LA has been already first signed. The flag can be computed based on the courses listed in the `before-mobility` and `latest-approved`, but we need a place to explain the reason of such a change.
+- The `last-draft`(`-snapshot`) part was required. If a LA was accepted and there was currently no proposal for change, then a copy of the approved version was sent in the `latest-draft`. We suggest to make the `latest-draft` element optional, meaning the proposal of changing LA, not signed yet. So in a situation where LA is signed and we do not want to change it, the `latest-draft` part will not be present in the get response.
 
 **Example scenario**
 

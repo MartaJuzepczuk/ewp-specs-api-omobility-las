@@ -49,32 +49,4 @@
             <timestamp>2019-03-08T15:27:23+02:00</timestamp>
         </approval>
     </latest-approved>
-    <latest-draft>
-        <component-studied status="removed" reason="timetable-conflict">
-            <title>Advanced Logics for Computer Scientists</title>
-        </component-studied>
-        <component-studied status="inserted" reason="substituting-deleted">
-            <title>Computational Social Choice Theory</title>
-        </component-studied>
-        <component-studied>
-            <title>Big Data Mining and Processing</title>
-        </component-studied>
-        <component-studied status="removed" reason="language-mismatch">
-            <title>Advanced Functional Programming</title>
-        </component-studied>
-        <component-studied status="inserted" reason="substituting-deleted">
-            <title>Artificial Intelligence and Expert Systems</title>
-        </component-studied>
-        <approval>
-            <by-party>student</by-party>
-        </approval>
-        <approval>
-            <by-party>sending-hei</by-party>
-            <timestamp>2019-03-08T14:20:56+02:00</timestamp>
-        </approval>
-        <approval>
-            <by-party>receiving-hei</by-party>
-            <timestamp>2019-03-08T15:27:23+02:00</timestamp>
-        </approval>
-    </latest-draft>
 </components-studied>
