@@ -1,5 +1,5 @@
 <components-studied>
-    <latest-draft>
+    <latest-proposal>
         <component-studied>
             <title>Advanced Logics for Computer Scientists</title>
         </component-studied>
@@ -17,5 +17,5 @@
             <timestamp>2019-01-13T14:03:23+02:00</timestamp>
         </approval>
         <should-now-be-approved-by>receiving-hei</should-now-be-approved-by>
-    </latest-draft>
+    </latest-proposal>
 </components-studied>

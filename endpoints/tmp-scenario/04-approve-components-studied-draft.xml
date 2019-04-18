@@ -1,6 +1,6 @@
 <approve-components-studied-draft-v1>
     <approving-party>receiving-hei</approving-party>
-    <current-latest-draft>
+    <current-latest-proposal>
         <component-studied>
             <title>Advanced Logics for Computer Scientists</title>
         </component-studied>
@@ -10,5 +10,5 @@
         <component-studied>
             <title>Advanced Functional Programming</title>
         </component-studied>
-    </current-latest-draft>
+    </current-latest-proposal>
 </approve-components-studied-draft-v1>

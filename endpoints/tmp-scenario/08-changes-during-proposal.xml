@@ -46,7 +46,7 @@
             <timestamp>2019-03-04T09:17:43+02:00</timestamp>
         </approval>
     </latest-approved>
-    <latest-draft>
+    <latest-proposal>
         <component-studied status="removed" reason="timetable-conflict">
             <title>Advanced Logics for Computer Scientists</title>
         </component-studied>
@@ -70,5 +70,5 @@
             <timestamp>2019-03-05T15:22:07+02:00</timestamp>
         </approval>
         <should-now-be-approved-by>receiving-hei</should-now-be-approved-by>
-    </latest-draft>
+    </latest-proposal>
 </components-studied>
