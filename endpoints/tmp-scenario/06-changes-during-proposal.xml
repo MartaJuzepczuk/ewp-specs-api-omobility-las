@@ -43,6 +43,14 @@
             <timestamp>2019-01-22T11:12:08+02:00</timestamp>
         </approval>
     </latest-approved>
+    <latest-changes>
+        <component-studied status="removed" reason="language-mismatch">
+            <title>Advanced Functional Programming</title>
+        </component-studied>
+        <component-studied status="inserted" reason="substituting-deleted">
+            <title>Advanced Databases</title>
+        </component-studied>
+    </latest-changes>
     <latest-proposal>
         <component-studied>
             <title>Advanced Logics for Computer Scientists</title>

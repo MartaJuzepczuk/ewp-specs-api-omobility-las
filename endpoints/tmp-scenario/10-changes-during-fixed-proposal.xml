@@ -46,6 +46,20 @@
             <timestamp>2019-03-04T09:17:43+02:00</timestamp>
         </approval>
     </latest-approved>
+    <latest-changes>
+        <component-studied status="removed" reason="timetable-conflict">
+            <title>Advanced Logics for Computer Scientists</title>
+        </component-studied>
+        <component-studied status="inserted" reason="substituting-deleted">
+            <title>Computational Social Choice Theory</title>
+        </component-studied>
+        <component-studied status="removed" reason="other">
+            <title>Advanced Databases</title>
+        </component-studied>
+        <component-studied status="inserted" reason="substituting-deleted">
+            <title>Artificial Intelligence and Expert Systems</title>
+        </component-studied>
+    </latest-changes>
     <latest-proposal>
         <component-studied status="removed" reason="timetable-conflict">
             <title>Advanced Logics for Computer Scientists</title>
