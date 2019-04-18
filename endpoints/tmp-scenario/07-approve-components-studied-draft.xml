@@ -1,6 +1,6 @@
 <approve-components-studied-draft-v1>
     <approving-party>receiving-hei</approving-party>
-    <current-latest-proposal>
+    <latest-proposal>
         <component-studied>
             <title>Advanced Logics for Computer Scientists</title>
         </component-studied>
@@ -13,5 +13,5 @@
         <component-studied status="inserted" reason="substituting-deleted">
             <title>Advanced Databases</title>
         </component-studied>
-    </current-latest-proposal>
+    </latest-proposal>
 </approve-components-studied-draft-v1>
