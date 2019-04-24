@@ -2,7 +2,7 @@ Learning agreement: schema simplification
 =========================================
 
 The current version of the learning agreement is quite complicated.
-We are trying to propose a simpler version that still will be compatible with the Commission's guidelines
+We want to propose a simpler version that still will be compatible with the Commission's guidelines
 (https://ec.europa.eu/programmes/erasmus-plus/resources/documents/applicants/learning-agreement_en).
 
 In the current version of the scheme, both `components-studied` (tables A / A2) and `components-recognized` (tables B / B2) consist of six parts:
@@ -24,7 +24,7 @@ so that we can express the reasons for the changes in LA after it has been first
   and it seems that we can not require them, we use the position numbers on the list (indexes).
   When the change consists of several removal and addition operations, the indexes may be interpreted differently.
   Of course, we have to impose one way of interpretation, but it can still easily lead to errors.
-- Not everyone stores the entire change history on the system and the current specification allows it.
+- Not everyone stores the entire change history in the system and the current specification allows it.
   In such cases, the server is allowed to calculate the `changes` parts based on the current and previous version before sending.
   It seems unnecessary. Equally, the client can do such a calculation if for some reason he wants to use it.
 - Courses lists in LA are not long. Coordinators can (or even may prefere) to view entire, ready versions of LA.
@@ -64,15 +64,15 @@ After these changes we will have four parts: `before-mobility`, `latest-approved
   When LA is signed and we do not want to change it, the `latest-changes` part will not be present in the get response.
 - `latest-proposal` - Proposal of a new version of the LA, not signed yet (usually signed by the student and the sending HEI, but not by the receiving HEI).
   When LA is signed and we do not want to change it, the `latest-proposal` part will not be present in the get response.
-  When the proposal is signed be all three parties, the `latest-proposal` is copied to `latest-approved`.
+  When the proposal is signed by all three parties, the `latest-proposal` is copied to `latest-approved`.
 
 **What we would like to change in update request**
 
 If we change the `get` response scheme, we should also change the update request similarly. We propose to:
 
-- Rename `approve-components-studied-draft-v1` to `approve-components-studied-proposal-v1`
+- Rename `approve-components-studied-draft-v1` to `approve-components-studied-proposal-v1`.
 - Rename `current-latest-draft-snapshot` to `latest-proposal`. Use the same structure as the `latest-proposal` in the `get` response.
-- Remove `suggested-changes` element
+- Remove `suggested-changes` element.
 - Rename `snapshot-with-changes-applied` to `suggestion`. Use the same structure as the `latest-proposal` in the `get` response.
 
 Additionally, we suggest to add `comment` field to the `update-components-studied-v1` request (this is the request
