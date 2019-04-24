@@ -16,6 +16,9 @@ In the current version of the scheme, both `components-studied` (tables A / A2) 
 In short, our suggestion is to remove all `changes` parts and slightly modify the `snapshot` parts,
 so that we can express the reasons for the changes in LA after it has been first signed (by all three parties - tables A2 and B2).
 
+As the `components-studied` and `components-recognized` parts are symmetric, in the rest of this description we will focus on
+the `components-studied` part. Changes in the second part will be symmetric.
+
 **Why we want to get rid of the `changes` parts?**
 
 - Keeping the whole history of changes is not required in the LA process.
@@ -52,10 +55,10 @@ so that we can express the reasons for the changes in LA after it has been first
 
 After these changes we will have four parts: `before-mobility`, `latest-approved`, `latest-changes` and `latest-proposal`.
 
-- `before-mobility` - The first signed version of the Learning Agreement (Table A or Table B).
+- `before-mobility` - The first signed version of the Learning Agreement, equivalent to table A of the LA.
   Will not be present before the first version of the LA is signed. After that it will be fixed.
-- `latest-approved` - The current version of the Learning Agreement. In the last version it will correspond to Table A2 or B2.
-  It contains courses which are actually attended by the student/recognized and changes in relation to the `before-mobility` version (with reasons).
+- `latest-approved` - The current version of the Learning Agreement. In the last version it is equivalent to Table A2 of the LA.
+  It contains courses which are actually attended by the student and changes in relation to the `before-mobility` version (with reasons).
   This part will not be present before the first version of the LA is signed.
   When the first version of the LA is signed, then it will be equal to the `before-mobility`.
   After further changes, it will differ from it and contain reasons of this differences.
