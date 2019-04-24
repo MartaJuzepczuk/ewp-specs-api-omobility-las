@@ -75,6 +75,8 @@ If we change the `get` response scheme, we should also change the update request
 - Remove `suggested-changes` element
 - Rename `snapshot-with-changes-applied` to `suggestion`. Use the same structure as the `latest-proposal` in the `get` response.
 
+Additionally, we suggest to add `comment` field to the `update-components-studied-v1` request (this is the request
+which is sent by the receiving HEI when it wants to suggest changes) and make the structured suggestion optional.
 
 **Example scenario**
 
@@ -90,7 +92,7 @@ Attached files *are not* valid get responses or valid update requests.
 * 06-changes-during-proposal.xml - student wants to change one course (get response)
 * 07-approve-components-studied-draft.xml - the receiving HEI accepts the change (update request)
 * 08-changes-during-proposal.xml - change applied; student wants to change two more courses - one of them added in previous change (get response)
-* 09-update-components-studied.xml  - the receiving HEI does not accept the change (update request)
+* 09-update-components-studied.xml  - the receiving HEI does not accept the change (update request). This time it uses comment instead of structured suggestion.
 * 10-changes-during-fixed-proposal.xml - student wants to change one more course, taking into account the receiving HEI comments (get response)
 * 11-approve-components-studied-draft.xml - the receiving HEI accepts the change (update request)
 * 12-final-version.xml - final version of the LA, with two changes during the mobility (get response) 
